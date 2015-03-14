@@ -101,7 +101,7 @@ def run():
 		tomorrow = datetime.datetime(now.year, now.month, now.day) + datetime.timedelta(1)
 		sec_till_midnight=abs(tomorrow - now).seconds 
 		print "Next update in "+str(sec_till_midnight/3600)+" hours\n"
-		sleep(sec_till_midnight)
+		sleep(sec_till_midnight+ 60)
 	print "DONE"
 	return
 
